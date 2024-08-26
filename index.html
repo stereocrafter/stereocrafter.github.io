@@ -63,7 +63,12 @@
       .section a{
         color:white
       }
-
+      .my-arrow{
+        color:orange;
+        font-size: 60px;
+        padding-left:150px;
+        padding-right: 150px;
+      }
       .myVideo{
         position: absolute;
         right: 0;
@@ -93,6 +98,10 @@
           background-size: contain;
            object-fit: cover; /*cover video background */
            z-index:100;
+      }
+      .fp-slidesNav{
+        text-align: center;
+        color:orangered
       }
     </style>
 
@@ -171,17 +180,6 @@
                           </a>
                         </span>
 
-                        <!-- Supplementary PDF link -->
-                        <span class="link-block">
-                          <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                          class="external-link ">
-                          <span class="icon">
-                            <i class="fas fa-file-pdf"></i>
-                          </span>
-                          <span>Supplementary</span>
-                        </a>
-                      </span>
-
                       <!-- Github link -->
                       <span class="link-block">
                         <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -211,13 +209,25 @@
         </div>
       </div>
 
+
+      <div class="section" id="section5">
+        <div class="hero-body" >
+        <div class="container">
+          <img width='100%' src="static/images/teaser.png"/>
+          <p style="color:black;text-align:justify">
+            We present a novel framework for converting 2D videos to immersive stereoscopic 3D, addressing the growing demand for 3D content in immersive experience. Leveraging foundation models as priors, our approach overcomes the limitations of traditional methods and boosts the performance in both video depth estimation and video inpainting to ensure the high-quality generation required by the display devices. The proposed system consists of three main steps: video depth estimation using a diffusion method, video splatting for warping and extracting occlusion mask, and stereo video inpainting. We utilize pre-trained stable video diffusion as the backbone and introduce a fine-tuning protocol for the stereo video inpainting task. To handle input video with varying lengths and resolutions, we explore auto-regressive strategies and tiled processing. A data processing pipeline is developed to reconstruct a dataset for training. Our framework demonstrates significant improvements in 2D-to-3D video conversion, offering a practical solution for creating immersive content compatible with devices like Apple Vision Pro and 3D displays.
+            This work contributes to the field by presenting an effective method for generating high-quality stereoscopic videos from monocular input, potentially transforming how we experience digital media.
+          </p>
+        </div>
+        </div>
+    </div>
+
       <div class="section" id="section5">
         <div class="hero-body" >
         <div class="container">
           <h2 class="title is-2">Overall Framework of StereoCrafter</h2>
           <img width='100%' src="static/images/framework.png"/>
           <p style="color:black;text-align:justify">
-            We propose a framework to convert any 2D videos to immersive stereoscopic 3D ones that can be viewed on different display devices, like 3D Glasses, Apple Vision Pro and 3D Display.
             Our method contains three main stages.
             <span style="color:orange">In the first stage, the video depth is estimated from the monocular video.</span>
              <span style="color:green">Then, We can obtain the warped video and its occlusion mask through depth-aware forward splatting with the left video and the video depth as input.</span>
@@ -227,11 +237,61 @@
     </div>
 
     <div class="section" id="section3">
-      <div class="hero-body is-centered">
-        <h2 class="title is-2">Results </h2>
-        <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
-          <source src="static/videos/more_results.mp4">
-        </video>
+      <div class="slide">
+        <div class="hero-body is-centered">
+          <h2 class="title is-2">Results </h2>
+          <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
+            <source src="static/videos/more_results_1.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="hero-body is-centered">
+          <h2 class="title is-2">Results </h2>
+          <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
+            <source src="static/videos/more_results_2.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="hero-body is-centered">
+          <h2 class="title is-2">Results </h2>
+          <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
+            <source src="static/videos/more_results_3.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="hero-body is-centered">
+          <h2 class="title is-2">Results </h2>
+          <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
+            <source src="static/videos/more_results_4.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="hero-body is-centered">
+          <h2 class="title is-2">Results </h2>
+          <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
+            <source src="static/videos/more_results_5.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="hero-body is-centered">
+          <h2 class="title is-2">Results </h2>
+          <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
+            <source src="static/videos/more_results_6.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="hero-body is-centered">
+          <h2 class="title is-2">Results </h2>
+          <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
+            <source src="static/videos/more_results_7.mp4">
+          </video>
+        </div>
       </div>
     </div>
 
@@ -308,7 +368,13 @@
     <script type="text/javascript">
       var myFullpage = new fullpage('#fullpage', {
         verticalCentered: true,
+        controlArrows: true,
+        controlArrowsHTML: [
+            '<div class="my-arrow"><i class="fas fa-arrow-alt-circle-left"></i></i></div>',
+            '<div class="my-arrow"><i class="fas fa-arrow-alt-circle-right"></i></div>',
+        ],
         navigation:true,
+        slidesNavigation: true,
       });
     </script>
 
