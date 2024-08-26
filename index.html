@@ -213,6 +213,7 @@
       <div class="section" id="section5">
         <div class="hero-body" >
         <div class="container">
+          <h2 class="title is-2"> Brief Introduction</h2>
           <img width='100%' src="static/images/teaser.png"/>
           <p style="color:black;text-align:justify">
             We present a novel framework for converting 2D videos to immersive stereoscopic 3D, addressing the growing demand for 3D content in immersive experience. Leveraging foundation models as priors, our approach overcomes the limitations of traditional methods and boosts the performance in both video depth estimation and video inpainting to ensure the high-quality generation required by the display devices. The proposed system consists of three main steps: video depth estimation using a diffusion method, video splatting for warping and extracting occlusion mask, and stereo video inpainting. We utilize pre-trained stable video diffusion as the backbone and introduce a fine-tuning protocol for the stereo video inpainting task. To handle input video with varying lengths and resolutions, we explore auto-regressive strategies and tiled processing. A data processing pipeline is developed to reconstruct a dataset for training. Our framework demonstrates significant improvements in 2D-to-3D video conversion, offering a practical solution for creating immersive content compatible with devices like Apple Vision Pro and 3D displays.
