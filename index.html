@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="StereoCrafter: Converting Any 2D Videos to Immersive Stereoscopic 3D with Diffusion Priors">
-  <meta property="og:title" content="StereoCrafter: Converting Any 2D Videos to Immersive Stereoscopic 3D with Diffusion Priors"/>
-  <meta property="og:description" content="StereoCrafter: Converting Any 2D Videos to Immersive Stereoscopic 3D with Diffusion Priors"/>
+  <meta name="description" content="StereoCrafter: Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos">
+  <meta property="og:title" content="StereoCrafter: Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos"/>
+  <meta property="og:description" content="StereoCrafter: Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos"/>
   <meta property="og:url" content="stereocrafter.github.io"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -14,13 +14,13 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="StereoCrafter: Converting Any 2D Videos to Immersive Stereoscopic 3D with Diffusion Priors">
-  <meta name="twitter:description" content="StereoCrafter: Converting Any 2D Videos to Immersive Stereoscopic 3D with Diffusion Priors">
+  <meta name="twitter:title" content="StereoCrafter: Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos">
+  <meta name="twitter:description" content="StereoCrafter: Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="StereoCrafter: Converting Any 2D Videos to Immersive Stereoscopic 3D with Diffusion Priors">
+  <meta name="keywords" content="StereoCrafter: Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -129,7 +129,7 @@
               <!-- <span style="text-shadow: 10px 0px 5px blue;"> -->
                 <!-- <span style="color:red;opacity:0.5">StereoCrafter:</span> -->
               <!-- </span> -->
-                 Converting Any 2D Videos to Immersive Stereoscopic 3D with Diffusion Priors
+                 Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos
             </h1>
             <div class="columns is-centered">
               <div class="column has-text-centered">
@@ -162,7 +162,7 @@
 
 
                       <div class="publication-authors">
-                        <span class="author-block" style="font-size: 30px;">Tencent AI Lab</span>
+                        <span class="author-block" style="font-size: 30px;">Tencent AI Lab &nbsp &nbsp &nbsp ARC Lab, Tencent PCG</span>
                         <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                       </div>
                       <br/>
@@ -214,7 +214,7 @@
         <div class="hero-body" >
         <div class="container">
           <h2 class="title is-2"> Brief Introduction</h2>
-          <img width='100%' src="static/images/teaser.png"/>
+          <img width='98%' src="static/images/teaser.png"/>
           <p style="color:black;text-align:justify">
             We present a novel framework for converting 2D videos to immersive stereoscopic 3D, addressing the growing demand for 3D content in immersive experience. Leveraging foundation models as priors, our approach overcomes the limitations of traditional methods and boosts the performance in both video depth estimation and video inpainting to ensure the high-quality generation required by the display devices. The proposed system consists of three main steps: video depth estimation using a diffusion method, video splatting for warping and extracting occlusion mask, and stereo video inpainting. We utilize pre-trained stable video diffusion as the backbone and introduce a fine-tuning protocol for the stereo video inpainting task. To handle input video with varying lengths and resolutions, we explore auto-regressive strategies and tiled processing. A data processing pipeline is developed to reconstruct a dataset for training. Our framework demonstrates significant improvements in 2D-to-3D video conversion, offering a practical solution for creating immersive content compatible with devices like Apple Vision Pro and 3D displays.
             This work contributes to the field by presenting an effective method for generating high-quality stereoscopic videos from monocular input, potentially transforming how we experience digital media.
@@ -241,7 +241,7 @@
       <div class="slide">
         <div class="hero-body is-centered">
           <h2 class="title is-2">Results </h2>
-          <video style="width:70%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
+          <video style="width:65%;display:block;margin:0 auto" loop="true" autoplay="autoplay" loop muted data-autoplay playsinline>
             <source src="static/videos/more_results_1.mp4">
           </video>
         </div>
@@ -330,20 +330,21 @@
       <div class="hero-body">
       <div class="container is-max-desktop">
         <h2 class="title is-2">Citations</h2>
-        <pre><code>BibTex Code Here</code></pre>
-        <p style="color: black;">
+        <pre><code>@article{zhao2024stereocrafter,
+            author      = {Zhao, Sijie and Hu, Wenbo and Cun, Xiaodong and Zhang, Yong and Li, Xiaoyu and Kong, Zhe and Gao, Xiangjun and Niu, Muyao and Shan, Ying},
+            title       = {StereoCrafter: Diffusion-based Generation of Long and High-fidelity Stereoscopic 3D from Monocular Videos},
+            journal     = {arXiv preprint},
+            year        = {2024}
+           }</code></pre>
+        <p style="color: black; margin-top: 50px">
           This page was built using the <a  style="color: black;" href="https://github.com/vinthony/project-page-template">modification version</a> of <a style="color: black;" href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> from <a style="color: black;" href="https://github.com/vinthony">vinthony</a>.
-          You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a  style="color: black;" rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+          You are free to borrow the of this website, we just ask that you link back to this page in the footer. This website is licensed under a <a  style="color: black;" rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
           Commons Attribution-ShareAlike 4.0 International License</a>.
         </p>
-
       </div>
-
-
-
-
       </div>
     </div>
+  
   </div>
 
 
@@ -353,8 +354,6 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
-
         </div>
       </div>
     </div>
