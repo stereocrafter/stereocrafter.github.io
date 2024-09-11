@@ -226,7 +226,7 @@
         <div class="hero-body" >
         <div class="container">
           <h2 class="title is-2"> Brief Introduction</h2>
-          <img width='90%' src="static/images/teaser.png"/>
+          <img width='90%' src="static/images/teaser_v1.png"/>
           <p style="color:black;text-align:justify">
             We present a novel framework for converting 2D videos to immersive stereoscopic 3D, addressing the growing demand for 3D content in immersive experience. Leveraging foundation models as priors, our approach overcomes the limitations of traditional methods and boosts the performance to ensure the high-fidelity generation required by the display devices. The proposed system consists of two main steps: depth-based video splatting for warping and extracting occlusion mask, and stereo video inpainting. We utilize pre-trained stable video diffusion as the backbone and introduce a fine-tuning protocol for the stereo video inpainting task. To handle input video with varying lengths and resolutions, we explore auto-regressive strategies and tiled processing. Finally, a sophisticated data processing pipeline has been developed to reconstruct a large-scale and high-quality dataset to support our training. Our framework demonstrates significant improvements in 2D-to-3D video conversion, offering a practical solution for creating immersive content for 3D devices like Apple Vision Pro and 3D displays. In summary, this work contributes to the field by presenting an effective method for generating high-quality stereoscopic videos from monocular input, potentially transforming how we experience digital media.
           </p>
@@ -238,7 +238,7 @@
         <div class="hero-body" >
         <div class="container">
           <h2 class="title is-2">Overall Framework of StereoCrafter</h2>
-          <img width='90%' src="static/images/framework.png"/>
+          <img width='90%' src="static/images/framework_v1.png"/>
           <p style="color:black;text-align:justify">
             Overall framework of StereoCrafter, which contains two main stages. 
             In the first stage, the video depth is estimated from the monocular video and we obtain the warped video and its occlusion mask through depth-based video splatting with the left video and the video depth as input. 
